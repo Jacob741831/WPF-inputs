@@ -1,0 +1,3 @@
+﻿M;20;Czerwony;True
+I;5;Czerwony;True
+M;30;Zielony;False

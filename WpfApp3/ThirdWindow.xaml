@@ -1,0 +1,37 @@
+<Window x:Class="WpfApp1.ThirdWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Wyniki ankiety"
+        Height="470" Width="400"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid Margin="20">
+        <StackPanel VerticalAlignment="Center">
+
+            <TextBlock Text="Wyniki ankiety"
+                       FontSize="24"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"
+                       Margin="0,0,0,25"/>
+
+            <TextBlock x:Name="WynikiBlock"
+                       FontSize="16"
+                       TextWrapping="Wrap"
+                       Margin="0,0,0,25"
+                       LineHeight="30"/>
+
+            <Button Content="Pobierz wyniki (.txt)"
+                    Height="40"
+                    Margin="0,0,0,10"
+                    Background="#FF007ACC"
+                    Foreground="White"
+                    FontWeight="Bold"
+                    Click="Pobierz_Click"/>
+
+            <Button Content="Dodaj kolejną osobę"
+                    Height="35"
+                    Click="NowaOsoba_Click"/>
+
+        </StackPanel>
+    </Grid>
+</Window>
